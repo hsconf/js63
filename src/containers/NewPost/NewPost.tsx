@@ -66,11 +66,11 @@ const NewPost = () => {
             <label htmlFor="title">Title
                 Enter title!
             </label>
-            <input type="text" className="form-control" name="title" id="title" onChange={handleChange} value={posts.title}/>
+            <input type="text" className="form-control" name="title" id="title" onChange={handleChange} value={posts.title} required/>
             <label htmlFor="description">
                 Enter description!
             </label>
-            <textarea name="description" id="description" className="form-control" onChange={handleChange} value={posts.description}></textarea>
+            <textarea name="description" id="description" className="form-control" onChange={handleChange} value={posts.description} required></textarea>
             <button type="submit" className="btn btn-success mt-2">Save</button>
         </form>
     );

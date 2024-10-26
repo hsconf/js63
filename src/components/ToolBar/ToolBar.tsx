@@ -4,13 +4,13 @@ const ToolBar = () => {
     return (
         <nav className="navbar navbar-expand-sm bg-body-tertiary">
             <div className="container">
-                <a className="navbar-brand" href="#">Blog</a>
+                <NavLink to="/" className="navbar-brand">Blog</NavLink>
                 <div className="collapse navbar-collapse">
                     <div className="navbar-nav ms-auto">
                         <NavLink to='/' className="nav-link">Home</NavLink>
                         <NavLink to='/posts/add' className="nav-link">Add</NavLink>
-                        <a className="nav-link" href="#">About</a>
-                        <a className="nav-link">Contacts</a>
+                        <NavLink to="/about" className="nav-link">About</NavLink>
+                        <NavLink to="/contacts" className="nav-link">Contacts</NavLink>
                     </div>
                 </div>
             </div>
